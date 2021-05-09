@@ -1,0 +1,49 @@
+.body {
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    grid-template-rows: 1fr;
+    background-color: #ffffff87;
+}
+
+.body-pane {
+    background-color: #ffffff3d;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.task-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 290px;
+    z-index: 3;
+    font-size: 14px;
+}
+
+
+
+.menu-btn {
+    border: 1px solid white;
+    color: white;
+    border-radius: 5px;
+    width: 23%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+
+
+
+.body-main {
+    padding: 2em 1em;
+    background-color: #ffffffda;
+    position: absolute;
+    top: 65px;
+    bottom: 35px;
+    right: 0px;
+    left: 295px;
+}

@@ -1,0 +1,47 @@
+/* LOADING DOTS */
+.loadingDots {
+    display: flex;
+    margin: auto;
+    width: 1px;
+    height: 100px;
+    position: relative;
+  }
+  .redDot {
+    position: absolute;
+    color: red;
+    font-size: 50px;
+    font-weight: 900;
+    animation: 1s redSpin infinite;
+  }
+  @keyframes redSpin {
+    0% { left:-60px; top: 40%; }
+    50% {  left:60px; top: 40%;  }
+    100% { left:-60px; top: 40%; }
+  }
+  .blueDot {
+    position: absolute;
+    color: blue;
+    font-size: 50px;
+    font-weight: 900;
+    animation: 1s blueSpin infinite;
+    animation-delay: 0.1s;
+  }
+  @keyframes blueSpin {
+    0% { left:-65px; top: 25%; }
+    50% {  left:65px; top: 25%;  }
+    100% { left:-65px; top: 25%; }
+  }
+  .greenDot {
+    position: absolute;
+    color: green;
+    font-size: 50px;
+    font-weight: 900;
+    animation: 1s greenSpin infinite;
+    animation-delay: 0.21s;
+  }
+  @keyframes greenSpin {
+    0% { left:-70px; top: 10%; }
+    50% {  left:70px; top: 10%;  }
+    100% { left:-70px; top: 10%; }
+  }
+  /* LOADING DOTS */

@@ -1,0 +1,69 @@
+.task {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff87;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.task:hover {
+    background-color: #ffffff87;
+}
+
+.task-ribbon-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 35%;
+    padding: 0px 5px;
+}
+
+
+
+.task p {
+    padding: 0px 10px;
+    height: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.task-ribbon-txt-sm {
+    font-size: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task-ribbon-txt-md {
+    font-size: 14px;
+}
+.task-ribbon-txt-lg {
+    margin: 0 10px;
+    font-size: 15px;
+    font-weight: 100;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.delete-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    height: 15px;
+    z-index: 10;
+    transition: all 0.3s;
+}
+.delete-btn:hover {
+    transform: scale(1.25);
+}
+
+.recurring-img {
+    padding-right: 1px; 
+    height: 20px;
+}
