@@ -5,22 +5,27 @@ import Header from './components/Header/Header';
 import './App.css';
 
 
-import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux'
 
 import { getTasks } from './actions/tasks';
+import { getUsers } from './actions/users';
 
 const App = () => {
     const dispatch = useDispatch();
+    const [currentUser, setCurrentUser] = useState(null);
+    const [screenContent, setScreenContent] = useState([])
 
     useEffect(() => {
         dispatch(getTasks());
+        dispatch(getUsers());
     }, [dispatch])
-
     return (
         <div className="App">
-            <Header />
-            <Body />
+            <Header currentUser={currentUser} setCurrentUser={setCurrentUser}
+                    screenContent={screenContent} setScreenContent={setScreenContent} />
+            <Body currentUser={currentUser} setCurrentUser={setCurrentUser}
+                    screenContent={screenContent} setScreenContent={setScreenContent} />
             <Footer />
         </div>
     );

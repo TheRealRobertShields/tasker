@@ -1,0 +1,60 @@
+.task-form {
+    background-color: #ffffffb0;
+    padding: 1rem;
+    display: none;
+}
+
+.input-group-task {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+label {
+    white-space: nowrap;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.input-group-task input {
+    border: 2px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    width: 200px;
+    outline: none;
+}
+
+.input-group-task-textarea textarea {
+    border: 2px solid rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);
+    outline: none;
+    height: 5rem;
+}
+
+.input-group-task-textarea {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.input-group-task input:hover {
+    background-color: rgba(255, 255, 0, 0.26);
+}
+.input-group-task-textarea textarea:hover {
+    background-color: rgba(255, 255, 0, 0.26);
+}
+.title {
+    border-bottom: 1px solid #0000001a;
+}
+.title input {
+    font-size: 25px;
+    font-weight: bold;
+}
+.desc input {
+    font-size: 20px;
+}
+.dueDate, .closedDate {
+    width: 200px;
+}

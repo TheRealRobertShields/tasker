@@ -1,14 +1,21 @@
 .task {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.35);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.212);
+    border-top: 3px solid rgb(255 255 255 / 42%);
+    border-left: 2px solid rgb(255 255 255 / 42%);
+    border-right: 1px solid rgba(0, 0, 0, 0.212);
+    border-radius: 5px;
     height: 60px;
-    width: 100%;
-    background-color: #ffffff87;
+    width: 96%;
+    color: white;
+    background-color: #21212170;
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.25s;
+    font-size: 11px;
+    margin: 5px 0px;
 }
 
 .task:hover {
-    background-color: #ffffff87;
+    background-color: #2121219f;
 }
 
 .task-ribbon-header {
@@ -17,14 +24,13 @@
     justify-content: space-between;
     align-items: center;
     height: 35%;
-    padding: 0px 5px;
+    padding: 3px 5px;
 }
 
 
 
 .task p {
     padding: 0px 10px;
-    height: 65%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -36,25 +42,25 @@
 .task-ribbon-txt-sm {
     font-size: 11px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 .task-ribbon-txt-md {
     font-size: 14px;
 }
-.task-ribbon-txt-lg {
-    margin: 0 10px;
-    font-size: 15px;
-    font-weight: 100;
+.task-ribbon-title {
+    margin-right: 10px;
+    font-size: 13px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+.task-ribbon-dueDate {
+    display: flex;
+    align-items: center;
+}
 .delete-btn {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
     height: 15px;
     z-index: 10;
     transition: all 0.3s;

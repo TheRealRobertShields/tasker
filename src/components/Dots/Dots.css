@@ -2,23 +2,28 @@
 .loadingDots {
     display: flex;
     margin: auto;
-    width: 1px;
-    height: 100px;
+    width: 100%;
+    height: 100%;
     position: relative;
   }
   .redDot {
+    line-height: 0px;
+    font-family: ui-rounded;
     position: absolute;
+    left: 50%;
     color: red;
     font-size: 50px;
     font-weight: 900;
     animation: 1s redSpin infinite;
   }
   @keyframes redSpin {
-    0% { left:-60px; top: 40%; }
-    50% {  left:60px; top: 40%;  }
-    100% { left:-60px; top: 40%; }
+    0% { left: 10%; top: 75%; }
+    50% {  left: 90%; top: 75%;  }
+    100% { left: 10%; top: 75%; }
   }
   .blueDot {
+    line-height: 0px;
+    font-family: ui-rounded;
     position: absolute;
     color: blue;
     font-size: 50px;
@@ -27,11 +32,13 @@
     animation-delay: 0.1s;
   }
   @keyframes blueSpin {
-    0% { left:-65px; top: 25%; }
-    50% {  left:65px; top: 25%;  }
-    100% { left:-65px; top: 25%; }
+    0% { left:10%; top: 50%; }
+    50% {  left:90%; top: 50%;  }
+    100% { left:10%; top: 50%; }
   }
   .greenDot {
+    line-height: 0px;
+    font-family: ui-rounded;
     position: absolute;
     color: green;
     font-size: 50px;
@@ -40,8 +47,8 @@
     animation-delay: 0.21s;
   }
   @keyframes greenSpin {
-    0% { left:-70px; top: 10%; }
-    50% {  left:70px; top: 10%;  }
-    100% { left:-70px; top: 10%; }
+    0% { left: 10%; top: 25%; }
+    50% { left: 90%; top: 25%;  }
+    100% { left: 10%; top: 25%; }
   }
   /* LOADING DOTS */

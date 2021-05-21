@@ -2,8 +2,10 @@
     box-shadow: 0px 0px 3px black;
     background-color: #00000070;
     z-index: 4;
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: center;
 }
 
 .header-left-section {
@@ -25,24 +27,165 @@
 }
 
 .header-right-section {
-    width: 100%;
+    width: -webkit-fill-available;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
     padding-left: 10px;
     padding-right: 10px;
 }
 
 .user-info {
+    color: white;
+    height: 100%;
+    font-size: 10px;
+    margin-right: 10px;
+    line-height: 12px;
     display: flex;
-    flex-direction: row;
-    padding-right: 5px;
     align-items: center;
+    justify-content: flex-end;
 }
 
 .user-img {
-    height: 31px;
+    height: 40px;
     border: 2px solid lawngreen;
     border-radius: 50%;
-    padding: 2px;
+    margin: 5px;
+    background-color: #ffffff87;
+}
+
+.user-displaytext {
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-logout {
+    color: #ff9800;
+    border: 1px solid #ff9800;
+    border-radius: 5px;
+    display: flex;
+    height: 15px;
+    width: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    transition: all 0.2s;
+}
+.user-logout:hover {
+    color: #00718f;
+    background-color: #ff9800;
+}
+
+.user-login {
+    color: white;
+    height: 100%;
+    width: 50%;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.user-form {
+    height: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.user-input-group {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 5px;
+}
+
+.user-login-btn {
+    background-color: rgba(146, 255, 56, 0);
+    border: 2px solid #92ff38;
+    box-shadow: 0 0 4px #92ff38, inset 0 0 4px #92ff38;
+    color: #92ff38;
+    padding: 0 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    font-size: 15px;
+    font-weight: bold;
+    height: 85%;
+    width: 65px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-shadow: 0 0 3px #92ff38;
+}
+.user-signup-btn {
+    background-color: rgba(255, 252, 56, 0);
+    border: 2px solid #fffc38;
+    color: #fffc38;
+    padding: 0 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    transition: all 0.2s;
+    font-size: 15px;
+    font-weight: bold;
+    height: 85%;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    box-shadow: 0 0 4px #fffc38, inset 0 0 4px #fffc38;
+}
+.user-login-btn:hover {
+    letter-spacing: 1px;
+    text-shadow: 0 0 9px #92ff38;
+    box-shadow: 0 0 5px #92ff38, inset 0 0 5px #92ff38;
+}
+.user-signup-btn:hover {
+    letter-spacing: 1px;
+    text-shadow: 0 0 9px #fffc38;
+    box-shadow: 0 0 5px #fffc38, inset 0 0 5px #fffc38;
+}
+
+.user-form input {
+    display: flex;
+    align-self: center;
+    font-size: 14px;
+    height: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: #ffffff00;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.829);
+    box-shadow: 0 0 3px white, inset 0 0 3px white;
+    border-radius: 7px;
+    padding: 0px 5px;
+}
+
+.user-login ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.50; /* Firefox */
+}
+
+.header-screen {
+    width: 90%;
+    padding: 5px 10px;
+    overflow-y: scroll;
+    height: 70%;
+    border: 1px solid rgba(255, 255, 255, 0.219);
+    border-radius: 9px;
+    line-height: 14px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.561);
+    /* box-shadow: inset 0 0 4px black; */
+    display: flex;
+    flex-direction: column;
+    align-self: center;
 }

@@ -1,0 +1,48 @@
+.login-form {
+   display: flex;
+   height: 100%;
+   width: 100%;
+   justify-content: center;
+   align-items: center;
+}
+
+.login-form form {
+   min-height: 350px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.input-group {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   width: 100%;
+}
+
+.input-group input {
+   border: 2px solid rgba(255, 255, 255, 0);
+   padding: 1px 5px;
+   border-radius: 7px;
+   width: 200px;
+}
+
+.input-group textarea {
+   border: 2px solid rgba(255, 255, 255, 0);
+   background-color: rgba(255, 255, 255, 0);
+   outline: none;
+   padding: 0px 10px;
+}
+
+.signup-link {
+   color: #ba97ff;
+   font-weight: bold;
+   cursor: pointer;
+   transition: all 0.25s;
+}
+.signup-link:hover {
+   font-size: 25px;
+}
